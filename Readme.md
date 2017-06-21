@@ -17,15 +17,16 @@ Query string parser
 ```js
 var parseQs = require('@f/parse-qs')
 
+parseQs('a=1&b=2') // -> {a: '1', b: '2'}
 ```
 
 ## API
 
-### parseQs(arg)
+### parseQs(str)
 
-- `arg` -
+- `str` - Query string (e.g. 'a=1&b=2')
 
-**Returns:**
+**Returns:** Returns object of `name`/`value` pairs.
 
 ## License
 
